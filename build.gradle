@@ -43,7 +43,7 @@ repoDir.mkdirs()
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "https://repositoryenriquitomc.sgvsh.ml/repo/net/enriquitomc/mods/launchwrapper/1.13)
+            repository(url: "https://repositoryenriquitomc.sgvsh.ml/repo/net/enriquitomc/mods/launchwrapper")
 
             pom.project {
                 description 'Helium's LaunchWrapper'
@@ -60,6 +60,4 @@ uploadArchives {
     }
 }
 
-clean << {
-    repoDir.deleteDir()
-}
+
