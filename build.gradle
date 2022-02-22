@@ -6,13 +6,18 @@ repositories {
     maven {
         url "https://libraries.minecraft.net/"
     }
+    maven{
+    
+    url "https://repositoryenriquitomc.sgvsh.ml/repo/"
+    
+    }
     mavenCentral()
 }
 
-group = 'net.minecraft'
+group = 'net.enriquitomc.mods'
 archivesBaseName = 'launchwrapper'
-version = '1.12'
-sourceCompatibility = 1.6
+version = '1.13'
+sourceCompatibility = 17
 
 dependencies {
     compile 'net.sf.jopt-simple:jopt-simple:4.5'
@@ -38,11 +43,11 @@ repoDir.mkdirs()
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file://" + repoDir.absolutePath)
+            repository(url: "https://repositoryenriquitomc.sgvsh.ml/repo/net/enriquitomc/mods/launchwrapper/1.13)
 
             pom.project {
-                description 'Minecraft LegacyLauncher'
-                url 'http://github.com/Mojang/LegacyLauncher'
+                description 'Helium's LaunchWrapper'
+                url 'http://github.com/HeliumMinecraft/LegacyLauncher'
             }
         }
     }
