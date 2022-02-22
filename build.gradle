@@ -46,7 +46,7 @@ uploadArchives {
             repository(url: "https://repositoryenriquitomc.sgvsh.ml/repo/net/enriquitomc/mods/launchwrapper")
 
             pom.project {
-                description 'Helium's LaunchWrapper'
+                description 'Helium LaunchWrapper'
                 url 'http://github.com/HeliumMinecraft/LegacyLauncher'
             }
         }
